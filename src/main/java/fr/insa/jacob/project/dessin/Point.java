@@ -5,16 +5,21 @@
  */
 package fr.insa.jacob.project.dessin;
 
+import java.awt.Color;
+
+
+
 /**
  *
  * @author PC
  */
-public class Point {
+public class Point extends FigureSimple{
     
     private double px;
     private double py;
     
-    public Point (double px, double py){
+    public Point (double px, double py, Color couleur){
+        super(couleur);
         this.px = px;
         this.py = py;
     }
@@ -34,6 +39,12 @@ public class Point {
     public void setPy (double py){
         this.py = py;
     }
+
+    @Override
+    public String toString() {
+        return "Point{" + "px=" + px + ", py=" + py + '}';
+    }
+    
     
     public double distance(Point p2) {
         double dx = this.px - p2.px;

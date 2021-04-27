@@ -18,5 +18,10 @@ public class Groupe extends TriangleTerrain{
     public Groupe(int idTT, Point p1, Point p2, Point p3, ArrayList<TriangleTerrain> contient){
         super(idTT, p1, p2, p3);
         this.contient = contient;
+        
+    }
+    
+    public List<TriangleTerrain> getContient() {
+        return this.contient;
     }
 }
