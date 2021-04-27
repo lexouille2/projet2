@@ -38,4 +38,6 @@ public class TriangleTerrain{
     public int getIdTT(){
         return this.idTT;
     }
+    
+    
 }

@@ -15,14 +15,14 @@ public class Terrain {
     private double xmax;
     private double ymin;
     private double ymax;
-    private Groupe terrain; //ensemble de tirangle terrain
+    private TriangleTerrain triangleTerrain;//ensemble de triangle terrain
     
-    public Terrain(double xmin, double xmax, double ymin, double ymax, Groupe terrain){
+    public Terrain(double xmin, double xmax, double ymin, double ymax, TriangleTerrain triangleTerrain){
         this.xmin = xmin;
         this.xmax = xmax;
         this.ymax = ymax;
         this.ymin = ymin;
-        this.terrain = terrain;
+        this.triangleTerrain = triangleTerrain;
     }
 
     public double getXmin() {
@@ -41,8 +41,8 @@ public class Terrain {
         return ymax;
     }
 
-    public Groupe getTerrain() {
-        return terrain;
+    public TriangleTerrain getTerrain() {
+        return triangleTerrain;
     }
     
 }
